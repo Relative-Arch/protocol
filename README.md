@@ -113,14 +113,23 @@ Each case follows the same structure: **system → snapshot → diagnosis → tr
 ## Repository Structure
 protocol/
 ├── README.md                          # This file
+
 ├── LICENSE                            # MIT License (for code)
+
 ├── LICENSE-documents                  # CC BY-NC-SA 4.0 (for documents)
+
 ├── the-language-book-v1.0.pdf         # Main whitepaper
+
 ├── model-quick-reference-v1.0.pdf     # Cheat sheet
+
 ├── diagnostic-atlas-v1.0.pdf          # Atlas PDF
+
 └── atlas/
+
     ├── atlas.json                     # Machine-readable atlas
+    
     └── atlas.schema.json              # JSON Schema for validation
+    
 ---
 
 ## How to Use This Protocol
