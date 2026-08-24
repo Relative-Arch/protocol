@@ -1,4 +1,4 @@
-# Relative Architecture Protocol v1.0
+# Relative Architecture Protocol v1.1
 
 **An open protocol for diagnosing hierarchical systems.**
 
@@ -7,7 +7,7 @@ Any complex system — organization, city, product, team, partnership, political
 > *"The language is an instrument. Not a dogma. Not a theory. Not an ideology. Use it."*
 
 **Author:** Roman Strokov  
-**Version:** 1.0 · 2026  
+**Version:** 1.1 · 2026  
 **Web:** [relativearch.com](https://relativearch.com)  
 **Contact:** [roman@relativearch.com](mailto:roman@relativearch.com)  
 **Academia:** [Roman Ziegel](https://independent.academia.edu/RomanZiegel)
@@ -181,7 +181,7 @@ For commercial licensing inquiries: [roman@relativearch.com](mailto:roman@relati
 ## Citation
 
 If you use this protocol in research or practice:
-Strokov, R. (2026). The Language of Hierarchical Systems v1.0.
+Strokov, R. (2026). The Language of Hierarchical Systems v1.1.
 Relative Architecture Protocol.
 https://github.com/Relative-Arch/protocol
 ```
