@@ -1,0 +1,194 @@
+{
+  "protocol_version": "1.1",
+  "spec_compatibility": "1.0",
+  "changelog_note": "Golden dataset extracted from Part V Examples 1-5 of book v1.1. For agent verification.",
+  "canonical_url": "https://github.com/Relative-Arch/protocol/releases/tag/v1.1",
+  "source_examples": [17, 18, 19, 20],
+  "snapshots": [
+    {
+      "id": "example-1-ma-quarter2",
+      "domain": "M&A",
+      "system": "Two organizations after merger deal. Coupling phase.",
+      "cycle": "quarter",
+      "snapshot_point": "Quarter 2 (6 months post-close)",
+      "type": "scheduled",
+      "dimensions": {
+        "Z1": 2, "Z2": 1, "Z3": 2,
+        "Y1": 1, "Y2": 1, "Y3": 0,
+        "X1": 2, "X2": 1, "X3": 2,
+        "W1": 1, "W2": 1, "W3": 2
+      },
+      "confirming_events": {
+        "Z1": "Teams use shared terminology in working documents. Recorded in three joint reports.",
+        "Z2": "Decisions are made by leadership of combined structure. Teams execute, do not initiate.",
+        "Z3": "Joint strategic session held. Vision formulated but not shared by all.",
+        "Y1": "Processes integrated formally. Protocol signed. Everyday practice unchanged.",
+        "Y2": "Proposals of one team do not account for specifics of the other. Standard solutions.",
+        "Y3": "No joint developments. No new formats emerged.",
+        "X1": "Three joint working groups created. Channels exist.",
+        "X2": "Interaction by protocol. Outside working groups, contacts minimal.",
+        "X3": "Meetings weekly. Document exchange regular.",
+        "W1": "Budgets consolidated, distribution through one center.",
+        "W2": "Upon departure of key manager, process will stop.",
+        "W3": "Integration contract signed for two years."
+      },
+      "expected_diagnosis": {
+        "means": {"Z": 1.67, "Y": 0.67, "X": 1.67, "W": 1.33},
+        "spread_within_axes": {"Z": 1, "Y": 1, "X": 1, "W": 1},
+        "spread_between_axes": 1.00,
+        "synchronization": "synchronized",
+        "zone": "growth",
+        "priority": "Y",
+        "priority_rationale": "Quality is lagging axis. Not embedded. Until Y grows, system will not transition."
+      }
+    },
+    {
+      "id": "example-2-urban-year1",
+      "domain": "Urban Management",
+      "system": "City of 50k. Metallurgical factory provides 60% jobs, 40% budget.",
+      "cycle": "year",
+      "snapshot_point": "Year 1 (baseline)",
+      "type": "scheduled",
+      "dimensions": {
+        "Z1": 1, "Z2": 1, "Z3": 1,
+        "Y1": 0, "Y2": 0, "Y3": 0,
+        "X1": 1, "X2": 1, "X3": 1,
+        "W1": 1, "W2": 0, "W3": 1
+      },
+      "confirming_events": {
+        "Z1": "Administration and factory use different terms. No joint documents.",
+        "Z2": "Decisions by administration and factory. Residents execute, do not initiate.",
+        "Z3": "Strategy written by administration. Not discussed with residents.",
+        "Y1": "Projects on paper. Not in everyday life.",
+        "Y2": "Projects do not account for residents' needs. Standard solutions.",
+        "Y3": "No new formats. City reproduces existing.",
+        "X1": "One channel: administration-factory. Other groups not connected.",
+        "X2": "Interaction by protocol. Outside formal meetings, no contacts.",
+        "X3": "Meetings rare, on request. Reactive.",
+        "W1": "All resources through factory. One channel.",
+        "W2": "Upon production cuts, city will not withstand. No reserves.",
+        "W3": "Factory funds social projects. Horizon one year."
+      },
+      "expected_diagnosis": {
+        "means": {"Z": 1.00, "Y": 0.00, "X": 1.00, "W": 0.67},
+        "spread_within_axes": {"Z": 0, "Y": 0, "X": 0, "W": 1},
+        "spread_between_axes": 1.00,
+        "synchronization": "synchronized",
+        "zone": "early_stage",
+        "priority": "Z",
+        "priority_rationale": "Identity first. Without shared language, agency, vision — quality and connections cannot be built. Pattern Z→Y/X→W."
+      }
+    },
+    {
+      "id": "example-3-startup-month3",
+      "domain": "Startup/Venture",
+      "system": "Pre-seed startup. 3 founders, 2 developers. Digital platform.",
+      "cycle": "month",
+      "snapshot_point": "Month 3 (closed testing)",
+      "type": "scheduled",
+      "dimensions": {
+        "Z1": 2, "Z2": 2, "Z3": 2,
+        "Y1": 1, "Y2": 1, "Y3": 1,
+        "X1": 1, "X2": 1, "X3": 2,
+        "W1": 0, "W2": 0, "W3": 1
+      },
+      "confirming_events": {
+        "Z1": "Team uses shared terminology. Users understand interface without explanation.",
+        "Z2": "Founders distribute tasks independently. Decisions joint.",
+        "Z3": "Vision formulated. Team understands direction. Not discussed with users.",
+        "Y1": "Product used by test group. Not embedded in everyday life.",
+        "Y2": "Feedback collected but does not influence product.",
+        "Y3": "One new format proposed by user. Not implemented.",
+        "X1": "One channel: founders-test group. Other segments not covered.",
+        "X2": "Interaction by testing protocol. Outside sessions, no contacts.",
+        "X3": "Testing sessions weekly. Feedback regular.",
+        "W1": "No revenue. Product free. Investment single source.",
+        "W2": "Upon cessation of investment, team will not survive.",
+        "W3": "Investment for six months. Horizon one funding cycle."
+      },
+      "expected_diagnosis": {
+        "means": {"Z": 2.00, "Y": 1.00, "X": 1.33, "W": 0.33},
+        "spread_within_axes": {"Z": 0, "Y": 0, "X": 1, "W": 1},
+        "spread_between_axes": 1.67,
+        "synchronization": "desynchronized",
+        "zone": "growth",
+        "priority": "Y",
+        "priority_rationale": "Quality lagging. Product exists but not adapted. Feedback does not influence result. Until Y grows, W will not appear."
+      }
+    },
+    {
+      "id": "example-4-architecture-year1",
+      "domain": "Architecture Firm",
+      "system": "Regional architecture firm. 9 people. Public buildings specialization.",
+      "cycle": "year",
+      "snapshot_point": "Year 1 (stable, no growth)",
+      "type": "scheduled",
+      "dimensions": {
+        "Z1": 2, "Z2": 1, "Z3": 1,
+        "Y1": 2, "Y2": 2, "Y3": 1,
+        "X1": 2, "X2": 2, "X3": 2,
+        "W1": 2, "W2": 1, "W3": 2
+      },
+      "confirming_events": {
+        "Z1": "Firm has recognizable style. Clients understand terminology. Language does not extend beyond firm.",
+        "Z2": "Decisions by chief architect. Architects execute. Partners approve, do not initiate.",
+        "Z3": "Vision by chief architect. Not discussed with team.",
+        "Y1": "Projects realized. Built objects used. Firm present in urban environment.",
+        "Y2": "Projects adapted to client needs. Customization exists. Hidden needs not accounted.",
+        "Y3": "New formats by chief architect. Team does not generate.",
+        "X1": "Three permanent clients. Connections with contractors. Conference participation.",
+        "X2": "Clients consult at early stages. Exchange substantive. No joint decisions.",
+        "X3": "Interaction regular. By project cycle. Stable.",
+        "W1": "Three clients provide 70% revenue. Two new clients last year.",
+        "W2": "Upon departure of chief architect, firm loses style and clients.",
+        "W3": "Contracts 2-3 years. Joint planning with two of three clients."
+      },
+      "expected_diagnosis": {
+        "means": {"Z": 1.33, "Y": 1.67, "X": 2.00, "W": 1.67},
+        "spread_within_axes": {"Z": 1, "Y": 1, "X": 0, "W": 1},
+        "spread_between_axes": 0.67,
+        "synchronization": "synchronized",
+        "zone": "plateau",
+        "priority": "Z",
+        "priority_rationale": "Identity lagging. Agency concentrated in one person. Vision not shared. Until Z grows, Y and X will not transition to level 3."
+      }
+    },
+    {
+      "id": "example-5-party-year1",
+      "domain": "Political Party",
+      "system": "Regional party branch. 3 deputies out of 40. Opposition.",
+      "cycle": "year",
+      "snapshot_point": "Year 1 (post-election)",
+      "type": "scheduled",
+      "dimensions": {
+        "Z1": 2, "Z2": 1, "Z3": 1,
+        "Y1": 1, "Y2": 1, "Y3": 0,
+        "X1": 1, "X2": 1, "X3": 1,
+        "W1": 1, "W2": 0, "W3": 1
+      },
+      "confirming_events": {
+        "Z1": "Party rhetoric recognizable. Members use shared terminology. Does not extend beyond activists.",
+        "Z2": "Decisions by regional leadership. Local branches execute. Rank-and-file do not initiate.",
+        "Z3": "Program by leadership. Not discussed with rank-and-file.",
+        "Y1": "Party projects exist. Not embedded in voters' everyday life.",
+        "Y2": "Program accounts for general needs. Not adapted to local communities.",
+        "Y3": "No new formats. Standard rallies and leaflets.",
+        "X1": "One channel: activists-voters in five cities. Other groups not covered.",
+        "X2": "Interaction by protocol: rally, leaflet, voting. Between campaigns, silence.",
+        "X3": "Interaction rare. Activates before elections.",
+        "W1": "3 deputies out of 40. 7.5% votes. One source: party list.",
+        "W2": "Upon change of leader, party loses identity. Upon cessation of funding, ceases activity.",
+        "W3": "Electoral support one-time. Horizon one election."
+      },
+      "expected_diagnosis": {
+        "means": {"Z": 1.33, "Y": 0.67, "X": 1.00, "W": 0.67},
+        "spread_within_axes": {"Z": 1, "Y": 1, "X": 0, "W": 1},
+        "spread_between_axes": 0.66,
+        "synchronization": "synchronized",
+        "zone": "early_stage",
+        "priority": "Z",
+        "priority_rationale": "Identity first. Agency concentrated in leadership. Vision not shared. Language does not extend beyond activists. Pattern Z→Y/X→W."
+      }
+    }
+  ]
+}
