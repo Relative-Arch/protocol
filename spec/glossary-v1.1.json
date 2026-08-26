@@ -1,0 +1,321 @@
+{
+  "protocol_version": "1.1",
+  "spec_compatibility": "1.0",
+  "changelog_note": "Glossary exported from Chapter 24 of book v1.1. Structured for RAG systems.",
+  "canonical_url": "https://github.com/Relative-Arch/protocol/releases/tag/v1.1",
+  "source_chapter": 24,
+  "terms": [
+    {
+      "term": "Adaptation",
+      "definition": "Ability of what is created to account for environment needs.",
+      "dimension": "Y2",
+      "chapter": 2
+    },
+    {
+      "term": "Agency",
+      "definition": "Ability of an element to act as a subject.",
+      "dimension": "Z2",
+      "chapter": 2
+    },
+    {
+      "term": "Alignment",
+      "definition": "Strategy at ceiling: pulling lagging axes up to ceiling level.",
+      "chapter": 7
+    },
+    {
+      "term": "Anomaly",
+      "definition": "Deviation from trend on a trajectory. Requires explanation.",
+      "chapter": 16
+    },
+    {
+      "term": "Antifragility",
+      "definition": "Property of a system to be strengthened by stress. Stress transitions a ready system.",
+      "chapter": 9
+    },
+    {
+      "term": "Aspect",
+      "definition": "Angle of view on a dimension: topology, state, dynamics.",
+      "chapter": 3
+    },
+    {
+      "term": "Axis",
+      "definition": "Group of three dimensions: Z, Y, X, W.",
+      "chapter": 2
+    },
+    {
+      "term": "Breadth",
+      "definition": "Number of independent channels.",
+      "dimension": "X1",
+      "chapter": 2
+    },
+    {
+      "term": "Cascade",
+      "definition": "Fall of one dimension pulls others. Mechanics of reverse transition.",
+      "chapter": 11
+    },
+    {
+      "term": "Catalyst",
+      "definition": "Small step in a pre-critical system that triggers a transition.",
+      "chapter": 8
+    },
+    {
+      "term": "Closure",
+      "definition": "Deliberate cessation of a system's existence.",
+      "chapter": 13
+    },
+    {
+      "term": "Coupling",
+      "definition": "Transition of several axes simultaneously. Changes configuration.",
+      "chapter": 10
+    },
+    {
+      "term": "Cycle",
+      "definition": "Period between snapshots. Determined by speed of processes.",
+      "chapter": 12
+    },
+    {
+      "term": "Density",
+      "definition": "Frequency and continuity of interaction.",
+      "dimension": "X3",
+      "chapter": 2
+    },
+    {
+      "term": "Depth",
+      "definition": "Quality of interaction between elements.",
+      "dimension": "X2",
+      "chapter": 2
+    },
+    {
+      "term": "Desynchronization",
+      "definition": "Spread ≥ 2. System loses coherence.",
+      "chapter": 5
+    },
+    {
+      "term": "Diagnostic atlas",
+      "definition": "Table of observable criteria: 12 dimensions × 5 levels = 60 cells.",
+      "chapter": 15
+    },
+    {
+      "term": "Duration",
+      "definition": "Horizon of commitments.",
+      "dimension": "W3",
+      "chapter": 2
+    },
+    {
+      "term": "Embeddedness",
+      "definition": "Degree of presence of what is created in everyday life.",
+      "dimension": "Y1",
+      "chapter": 2
+    },
+    {
+      "term": "Entropy",
+      "definition": "Tendency of a system to degrade without inflow of energy.",
+      "chapter": 9
+    },
+    {
+      "term": "Event",
+      "definition": "Intervention that transitions the system to the next level.",
+      "chapter": 8
+    },
+    {
+      "term": "Event-driven snapshot",
+      "definition": "Snapshot recorded upon the fact of an event. Shows transition point.",
+      "chapter": 16
+    },
+    {
+      "term": "Expansion",
+      "definition": "Strategy at ceiling: entry into an adjacent domain.",
+      "chapter": 7
+    },
+    {
+      "term": "Field separation",
+      "definition": "Z, Y, X — action field. W — result field. Do not manage W directly.",
+      "chapter": 6
+    },
+    {
+      "term": "Freeze",
+      "definition": "Fixation of the system at the current level without attempts at growth.",
+      "chapter": 13
+    },
+    {
+      "term": "Growth zone",
+      "definition": "Z, Y, X grow, W lags. Potential is accumulated.",
+      "chapter": 6
+    },
+    {
+      "term": "Identity",
+      "definition": "Axis Z. Language, agency, vision.",
+      "chapter": 2
+    },
+    {
+      "term": "Innovation",
+      "definition": "Ability of a system to generate new formats.",
+      "dimension": "Y3",
+      "chapter": 2
+    },
+    {
+      "term": "Journal",
+      "definition": "Sequence of snapshots recorded at equal intervals.",
+      "chapter": 16
+    },
+    {
+      "term": "Language",
+      "definition": "Shared conceptual apparatus. Also: name of the model.",
+      "dimension": "Z1",
+      "chapter": 2
+    },
+    {
+      "term": "Managed downgrade",
+      "definition": "Deliberate transition of the system to a lower level.",
+      "chapter": 13
+    },
+    {
+      "term": "Monitoring",
+      "definition": "Regular recording of snapshots. Scheduled and event-driven.",
+      "chapter": 16
+    },
+    {
+      "term": "Norm",
+      "definition": "Acceptable spread. Within axis ≤ 1. Between axes ≤ 1.",
+      "chapter": 5
+    },
+    {
+      "term": "Observable event",
+      "definition": "Fact recorded by an external observer. Basis of a snapshot.",
+      "chapter": 14
+    },
+    {
+      "term": "Phase",
+      "definition": "Discrete state of a system. Levels 0–4.",
+      "chapter": 4
+    },
+    {
+      "term": "Phase transition",
+      "definition": "Jump of a system from one phase to another.",
+      "chapter": 10
+    },
+    {
+      "term": "Plateau zone",
+      "definition": "Levels do not change for three or more cycles.",
+      "chapter": 12
+    },
+    {
+      "term": "Presumption of unconfirmed",
+      "definition": "No event — no level. Burden of proof on the one who asserts.",
+      "chapter": 14
+    },
+    {
+      "term": "Quality",
+      "definition": "Axis Y. Embeddedness, adaptation, innovation.",
+      "chapter": 2
+    },
+    {
+      "term": "Resources",
+      "definition": "Axis W. Share, resilience, duration.",
+      "chapter": 2
+    },
+    {
+      "term": "Resilience",
+      "definition": "Ability of exchange to withstand loss of channels.",
+      "dimension": "W2",
+      "chapter": 2
+    },
+    {
+      "term": "Reverse phase transition",
+      "definition": "Jump of a system from a higher phase to a lower one.",
+      "chapter": 11
+    },
+    {
+      "term": "Risk zone",
+      "definition": "W grows while Z, Y, X lag. Exchange without structure.",
+      "chapter": 6
+    },
+    {
+      "term": "Scheduled snapshot",
+      "definition": "Snapshot recorded once per cycle. Shows trend.",
+      "chapter": 16
+    },
+    {
+      "term": "Share",
+      "definition": "Structure of resource distribution.",
+      "dimension": "W1",
+      "chapter": 2
+    },
+    {
+      "term": "Small step",
+      "definition": "Intervention that maintains the system at the current level. Does not transition.",
+      "chapter": 8
+    },
+    {
+      "term": "Snapshot",
+      "definition": "One-time recording of 12 dimensions.",
+      "chapter": 14
+    },
+    {
+      "term": "Spread",
+      "definition": "Difference between maximum and minimum level.",
+      "chapter": 5
+    },
+    {
+      "term": "Stagnation zone",
+      "definition": "Levels do not change for three or more cycles.",
+      "chapter": 12
+    },
+    {
+      "term": "State",
+      "definition": "Aspect: what quality an element possesses.",
+      "chapter": 3
+    },
+    {
+      "term": "Structural ceiling",
+      "definition": "Objective constraint of the environment. Three cycles without shift — ceiling.",
+      "chapter": 7
+    },
+    {
+      "term": "Synchronization",
+      "definition": "Spread ≤ 1. System is coherent.",
+      "chapter": 5
+    },
+    {
+      "term": "To transition",
+      "definition": "To change the phase of a system. Not 'to translate'.",
+      "chapter": 8
+    },
+    {
+      "term": "Topology",
+      "definition": "Aspect: how an element is structured.",
+      "chapter": 3
+    },
+    {
+      "term": "Trajectory",
+      "definition": "Sequence of snapshots over time. Shows movement.",
+      "chapter": 12
+    },
+    {
+      "term": "Transition point",
+      "definition": "Snapshot in which a level changed by 1+.",
+      "chapter": 16
+    },
+    {
+      "term": "Trend",
+      "definition": "Direction on a sequence of 3+ snapshots.",
+      "chapter": 16
+    },
+    {
+      "term": "Vision",
+      "definition": "Shared view of direction.",
+      "dimension": "Z3",
+      "chapter": 2
+    },
+    {
+      "term": "Weak link rule",
+      "definition": "The lagging element determines the real level of the system.",
+      "chapter": 1
+    },
+    {
+      "term": "Zone of false well-being",
+      "definition": "W holds while Z, Y, X fall. Resources exist, structure is destroyed.",
+      "chapter": 11
+    }
+  ]
+}
