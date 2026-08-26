@@ -114,3 +114,5 @@ Each rule in `rules-v1.1.yaml` derives from ontology. Below is the explicit rati
 ---
 
 *This document is part of Protocol v1.1. Canonical source: https://github.com/Relative-Arch/protocol/releases/tag/v1.1*
+
+**License** "MIT (see LICENSE-MIT); book text under CC BY-NC-SA 4.0 (see LICENSE-BOOK)"
