@@ -52,18 +52,31 @@ Before diagnosing or designing interventions, read [`spec/context-v1.1.md`](./sp
 ---
 
 ## Repository Structure
+
 /
+
 ├── llms.txt # AI agent entry point
+
 ├── README.md # This file
+
 ├── CHANGELOG.md # Version history
+
 ├── atlas/
+
 │ ├── atlas.json # Diagnostic atlas (machine-readable)
+
 │ └── atlas.schema.json # JSON Schema for atlas validation
+
 └── spec/
+
     ├── context-v1.1.md # Theoretical rationale
+    
     ├── rules-v1.1.yaml # Formalized rules
+    
     ├── glossary-v1.1.json # Structured glossary
+    
     └── golden-dataset.json # Test dataset for agent verification
+    
 
 ---
 
