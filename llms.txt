@@ -1,0 +1,50 @@
+# Relative Architecture Protocol v1.1
+
+> The Language of Hierarchical Systems: Space. Rules. Dynamics. Diagnostics.
+> A protocol for observing, diagnosing, and navigating hierarchical systems through 4 axes, 12 dimensions, and 5 discrete phase levels.
+
+## Version
+- Protocol: 1.1
+- Spec compatibility: 1.0
+- Release: https://github.com/Relative-Arch/protocol/releases/tag/v1.1
+
+## License
+CC BY-NC-SA 4.0
+
+## Canonical Specification Files
+
+### Core
+- Context and rationale: /spec/context-v1.1.md
+- Diagnostic atlas (60 criteria): /atlas/atlas.json
+- Atlas JSON schema: /atlas/atlas.schema.json
+- Formalized rules: /spec/rules-v1.1.yaml
+- Glossary (60 terms): /spec/glossary-v1.1.json
+- Golden dataset (5 examples): /spec/golden-dataset.json
+
+### For Humans
+- Book PDF v1.1: See Academy or GitHub Release v1.1
+- Changelog: /CHANGELOG.md
+
+## Quick Reference
+
+### Four Axes
+- Z — Identity (Language, Agency, Vision)
+- Y — Quality (Embeddedness, Adaptation, Innovation)
+- X — Connections (Breadth, Depth, Density)
+- W — Resources (Share, Resilience, Duration)
+
+### Five Levels (Phase States)
+0 = Absence | 1 = Formal structure | 2 = Development | 3 = Stable state | 4 = Self-reproduction
+
+### Key Rules
+- Spread ≤ 1 → synchronized. Spread ≥ 2 → desynchronized, priority to lagging.
+- Z, Y, X = action field. W = result field. Do not manage W directly.
+- Small steps maintain. Events transition. Catalyst = small step in pre-critical system.
+- Weak link determines ceiling. Minimum defines reality, not mean.
+- Presumption of unconfirmed: no observable event → no level confirmed.
+
+### Transition Pattern
+Z → Y/X → W. Identity first. Resources last. Observed regularity, not recommendation.
+
+## For AI Agents
+Before diagnosing or designing interventions, read /spec/context-v1.1.md and /spec/constraints.md (when available). All rules derive from structural properties described there. Do not deviate from constraints.
