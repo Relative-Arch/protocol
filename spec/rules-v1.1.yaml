@@ -1,0 +1,172 @@
+# Relative Architecture Protocol — Formalized Rules v1.1
+# Machine-readable specification of diagnostic and intervention rules.
+# Each rule includes rationale referencing context-v1.1.md.
+
+protocol_version: "1.1"
+spec_compatibility: "1.0"
+changelog_note: "Rules unchanged from v1.0. Rationale field added for AI interpretability."
+canonical_url: "https://github.com/Relative-Arch/protocol/releases/tag/v1.1"
+context_reference: "spec/context-v1.1.md"
+
+rules:
+
+  # ─── SYNCHRONIZATION ───────────────────────────────────────────────
+  synchronization_within_axis:
+    condition: "max(dimensions) - min(dimensions) <= 1"
+    status: "synchronized"
+    action: "maintenance"
+    rationale: "Weak link property (§1.3). Spread ≤ 1 means no dimension lags critically. Mean reflects reality. See context §1.3."
+
+  internal_desynchronization:
+    condition: "max(dimensions) - min(dimensions) >= 2"
+    status: "internal_desynchronization"
+    action: "priority_to_lagging_dimension"
+    warning: "mean_is_misleading"
+    rationale: "Weak link determines ceiling (§1.3). Axis operates at minimum level, not mean. Strengthening strong dimensions yields no result until weak link is reinforced. See context §1.3, §3.1."
+
+  synchronization_between_axes:
+    condition: "max(axis_means) - min(axis_means) <= 1"
+    status: "synchronized"
+    action: "maintenance"
+    rationale: "System-level coherence. All axes move in concert. No structural instability. See context §3.1."
+
+  inter_axis_desynchronization:
+    condition: "max(axis_means) - min(axis_means) >= 2"
+    status: "inter_axis_desynchronization"
+    action: "priority_to_lagging_axis"
+    rationale: "Structural instability at system level. Lagging axis prevents system-wide transition. See context §1.3, §3.1."
+
+  # ─── FIELD SEPARATION ──────────────────────────────────────────────
+  field_separation:
+    action_field: ["Z", "Y", "X"]
+    result_field: ["W"]
+    rule: "do_not_manage_W_directly"
+    rationale: "W is a projection of Z/Y/X state, not an independent parameter. Projection changes AFTER state changes. Managing W directly violates causality. See context §3.2."
+
+  growth_zone:
+    condition: "W < min(Z_mean, Y_mean, X_mean)"
+    status: "growth_zone"
+    action: "continued_work_on_Z_Y_X; do_not_force_W"
+    rationale: "Potential accumulated. Resources lag normally in early stages. Forcing W destroys non-financial axes. See context §3.2."
+
+  risk_zone:
+    condition: "W > max(Z_mean, Y_mean, X_mean)"
+    status: "risk_zone"
+    action: "urgent_actions_on_Z_Y_X; do_not_increase_W"
+    rationale: "Resources unsecured by structure. Connection holds on inertia. At first disturbance, resources will be lost. See context §3.2."
+
+  false_wellbeing:
+    condition: "W stable or growing AND (Z_falling OR Y_falling OR X_falling)"
+    status: "false_wellbeing"
+    action: "urgent; do_not_wait_for_W_to_fall"
+    rationale: "W lags during reverse transition. Structure already degrading while resources still flow. When W falls, recovery requires events, sometimes impossible. See context §3.2, §4.3."
+
+  # ─── STRUCTURAL CEILING ───────────────────────────────────────────
+  stagnation_vs_ceiling:
+    stagnation_condition: "levels_unchanged AND effort_insufficient_or_stopped"
+    ceiling_condition: "levels_unchanged_for_3+_cycles AND methodical_effort_applied AND interventions_varied"
+    action_stagnation: "resume_work"
+    action_ceiling: "alignment_or_expansion"
+    rationale: "Stagnation is cured by resuming effort. Ceiling is objective environmental constraint. Three cycles with varied interventions without shift = ceiling, not stagnation. See context §3.3."
+
+  alignment_strategy:
+    condition: "one_axis_at_ceiling AND other_axes_lag"
+    action: "strengthen_lagging_axes_to_ceiling_level"
+    result: "increased_stability_not_growth"
+    rationale: "Synchronized system at lower level is more stable than desynchronized system with one high axis. See context §3.3."
+
+  expansion_strategy:
+    condition: "ceiling_reached AND adjacent_domain_accessible"
+    action: "enter_adjacent_domain"
+    result: "bypass_ceiling_through_new_channels"
+    rationale: "Ceiling remains but system finds new space for growth. Overall volume increases through multidimensional connection. See context §3.3."
+
+  # ─── INTERVENTIONS ────────────────────────────────────────────────
+  small_step:
+    function: "counteract_entropy"
+    result: "system_remains_at_current_level"
+    principle: "proportional_support_increases_with_level"
+    rationale: "Small steps operate WITHIN current phase. They maintain but do not transition. Higher levels require more substantial maintenance (non-additivity). See context §3.4, §4.1."
+
+  event:
+    function: "change_phase"
+    result: "system_transitions_to_next_level"
+    required_properties:
+      - "independent_value"
+      - "absence_of_immediate_request"
+      - "shift_in_perception"
+    rationale: "Event crosses phase boundary. All three properties required. Missing any one = not an event. Non-additivity: small steps do not accumulate into transition. See context §3.4, §4.1."
+
+  catalyst:
+    function: "trigger_transition"
+    condition: "small_step_in_pre_critical_system_only"
+    result: "system_transitions_to_next_level"
+    criterion: "if_level_shifted_after_small_step_then_catalyst_else_ordinary_small_step"
+    rationale: "Small step is not cause but trigger. Effect depends on system state, not action magnitude. Same step in unprepared system = ordinary touch. See context §3.4."
+
+  # ─── ENTROPY & MAINTENANCE ────────────────────────────────────────
+  entropy:
+    direction: "downward"
+    condition: "absence_of_maintenance"
+    sources: ["internal_forgetting", "people_leave", "loss_of_meaning", "competition", "regulatory_changes", "technological_shifts", "change_of_key_figures"]
+    rationale: "Without energy inflow, any structure decays. Degradation is inevitable, not accidental. Asymmetry: growth requires effort, degradation happens by itself. See context §4.2."
+
+  maintenance:
+    regularity: "continuous_not_episodic"
+    proportionality: "minimum_sufficient_energy_grows_with_level"
+    rationale: "Entropy does not stop. Maintenance must not stop either. Regularity ≠ frequency. System receiving support once per year degrades between touches. See context §4.2."
+
+  antifragility:
+    ready_system: "stress_triggers_transition_upward"
+    unready_system: "stress_triggers_cascading_collapse"
+    differentiator: "potential_accumulated_AND_synchronization_exists"
+    rationale: "Difference is in system state, not stress magnitude. Same crisis = catastrophe for one, opportunity for another. See context §4.2."
+
+  # ─── TRANSITION PATTERN ───────────────────────────────────────────
+  transition_pattern:
+    order: "Z_first → Y_and_X_next → W_last"
+    type: "observed_regularity_not_recommendation"
+    violation_consequence: "risk_zone"
+    rationale: "Identity defines landscape. Quality and connections fill it. Resources project onto filled landscape. Starting with W = exchange without structure = dependency. See context §4.1."
+
+  # ─── MONITORING ───────────────────────────────────────────────────
+  monitoring_rule:
+    signal_axes: ["Z", "Y", "X"]
+    confirmation_axis: ["W"]
+    rule: "monitor_Z_Y_X_not_W"
+    rationale: "W shows what already happened. Z/Y/X show what is happening. Monitoring only W = learning about problem when too late. W falling while Z/Y/X high = alarm signal. See context §4.3."
+
+  snapshot_types:
+    scheduled:
+      frequency: "once_per_cycle"
+      purpose: "trend_detection"
+    event_driven:
+      trigger: "event_changing_at_least_one_dimension_by_1+_level"
+      purpose: "transition_point_capture"
+    rationale: "Scheduled shows system is alive. Event-driven shows system changed. Both necessary. Without scheduled = no trend. Without event-driven = no transition mechanics. See context §4.3."
+
+  # ─── STRATEGIES WITHOUT GROWTH ────────────────────────────────────
+  freeze:
+    condition: "current_level_valuable AND maintenance_possible AND growth_impossible"
+    action: "minimal_maintenance; monitoring_on_Z_Y_X"
+    result: "stable_at_current_level"
+    rationale: "Retention strategy. System needed as-is. Growth impossible but degradation undesirable. See context §4.4."
+
+  managed_downgrade:
+    condition: "current_level_cannot_be_maintained OR current_level_not_valuable"
+    action: "deliberate_transition_to_lower_stable_level"
+    result: "stable_at_available_level"
+    rationale: "Adaptation. System chooses level it can hold instead of level it cannot. Difference from cascade: presence of decision. See context §4.4."
+
+  closure:
+    condition: "system_exhausted AND continuation_yields_no_value"
+    action: "deliberate_completion; knowledge_preservation"
+    result: "system_completed"
+    rationale: "Recognition that system fulfilled its function. Not every system must exist forever. Completion ≠ destruction. See context §4.4."
+
+  # ─── PRESUMPTION OF UNCONFIRMED ───────────────────────────────────
+  presumption_of_unconfirmed:
+    rule: "no_observable_event → no_level_confirmed"
+    burden_of_proof: "on_asserter"
+    consequence: "system_at_current_confirmed_level_not_assumed"
+    rationale: "Removes subjectivity. Two observers recording same events = same snapshot. Two observers interpreting same events = different snapshots. Protocol works with recordings, not interpretations. See context §5."
