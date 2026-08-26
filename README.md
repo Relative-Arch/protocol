@@ -33,6 +33,10 @@ This repository contains machine-readable specifications of the Relative Archite
 | [`spec/glossary-v1.1.json`](./spec/glossary-v1.1.json) | 60 terms structured for RAG systems |
 | [`spec/golden-dataset.json`](./spec/golden-dataset.json) | 5 canonical snapshots with expected diagnoses for agent verification |
 
+### Licensing
+- **Spec files** (atlas, rules, context, glossary, golden dataset): [MIT](./LICENSE-MIT) — free for commercial and non-commercial use, including AI integration.
+- **Book text and narrative**: [CC BY-NC-SA 4.0](./LICENSE-BOOK) — non-commercial only. Cannot be repackaged or sold as a product.
+
 ### Key Constraints for Agents
 Before diagnosing or designing interventions, read [`spec/context-v1.1.md`](./spec/context-v1.1.md). All rules derive from structural properties described there. Do not deviate from these invariants:
 
