@@ -3,6 +3,7 @@
   "spec_compatibility": "1.0",
   "changelog_note": "Glossary exported from Chapter 24 of book v1.1. Structured for RAG systems.",
   "canonical_url": "https://github.com/Relative-Arch/protocol/releases/tag/v1.1",
+  "license": "MIT (see LICENSE-MIT); book text under CC BY-NC-SA 4.0 (see LICENSE-BOOK)",
   "source_chapter": 24,
   "terms": [
     {
