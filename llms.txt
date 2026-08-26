@@ -9,7 +9,8 @@
 - Release: https://github.com/Relative-Arch/protocol/releases/tag/v1.1
 
 ## License
-CC BY-NC-SA 4.0
+- Machine-readable specs (JSON, YAML, MD): MIT — see /LICENSE-MIT
+- Book text, narrative, examples: CC BY-NC-SA 4.0 — see /LICENSE-BOOK
 
 ## Canonical Specification Files
 
