@@ -49,3 +49,9 @@ Z → Y/X → W. Identity first. Resources last. Observed regularity, not recomm
 
 ## For AI Agents
 Before diagnosing or designing interventions, read /spec/context-v1.1.md and /spec/constraints.md (when available). All rules derive from structural properties described there. Do not deviate from constraints.
+
+### Agent Prompts
+- Mandatory constraints: /spec/constraints.md
+- Snapshot diagnostic prompt: /spec/prompts/snapshot.md
+- Trajectory analysis prompt: /spec/prompts/trajectory.md
+- Intervention design prompt: /spec/prompts/intervention.md
