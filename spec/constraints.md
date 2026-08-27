@@ -116,7 +116,8 @@ Three cycles of methodical effort without shift = ceiling, not stagnation.
 - Diagnostic atlas: `atlas/atlas.json`
 - Glossary: `glossary-v1.1.json`
 - Golden dataset for verification: `golden-dataset.json`
-
+- Book chapters for full rationale: Ch.1 (properties), Ch.5–9 (rules), Ch.10–13 (dynamics), Ch.14 (snapshot/presumption)
+  
 ---
 
 *These constraints are derived from the structural properties of hierarchical systems described in the Relative Architecture Protocol v1.1. They are not recommendations. They are consequences of structure.*
