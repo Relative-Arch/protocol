@@ -5,6 +5,13 @@
   "canonical_url": "https://github.com/Relative-Arch/protocol/releases/tag/v1.1",
   "license": "MIT (see LICENSE-MIT); book text under CC BY-NC-SA 4.0 (see LICENSE-BOOK)",
   "source_examples": [17, 18, 19, 20],
+  "spec_references": 
+    {
+  "atlas": "/atlas/atlas.json",
+  "rules": "/spec/rules-v1.1.yaml",
+  "context": "/spec/context-v1.1.md",
+  "constraints": "/spec/constraints.md"
+    },
   "snapshots": [
     {
       "id": "example-1-ma-quarter2",
