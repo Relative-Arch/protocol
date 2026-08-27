@@ -4,7 +4,7 @@
   "changelog_note": "Golden dataset extracted from Part V Examples 1-5 of book v1.1. For agent verification.",
   "canonical_url": "https://github.com/Relative-Arch/protocol/releases/tag/v1.1",
   "license": "MIT (see LICENSE-MIT); book text under CC BY-NC-SA 4.0 (see LICENSE-BOOK)",
-  "source_examples": [17, 18, 19, 20],
+  "source_examples": [17, 18, 19, 20, 21],
   "spec_references": 
     {
   "atlas": "/atlas/atlas.json",
