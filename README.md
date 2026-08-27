@@ -32,6 +32,10 @@ This repository contains machine-readable specifications of the Relative Archite
 | [`spec/rules-v1.1.yaml`](./spec/rules-v1.1.yaml) | Formalized rules with rationale references |
 | [`spec/glossary-v1.1.json`](./spec/glossary-v1.1.json) | 60 terms structured for RAG systems |
 | [`spec/golden-dataset.json`](./spec/golden-dataset.json) | 5 canonical snapshots with expected diagnoses for agent verification |
+| [`spec/constraints.md`](./spec/constraints.md) | Mandatory invariants for AI agents |
+| [`spec/prompts/snapshot.md`](./spec/prompts/snapshot.md) | System prompt for snapshot diagnostics |
+| [`spec/prompts/trajectory.md`](./spec/prompts/trajectory.md) | System prompt for trajectory analysis |
+| [`spec/prompts/intervention.md`](./spec/prompts/intervention.md) | System prompt for intervention design |
 
 ### Licensing
 - **Spec files** (atlas, rules, context, glossary, golden dataset): [MIT](./LICENSE-MIT) — free for commercial and non-commercial use, including AI integration.
@@ -51,7 +55,9 @@ Before diagnosing or designing interventions, read [`spec/context-v1.1.md`](./sp
 - **Protocol version:** 1.1
 - **Spec compatibility:** 1.0 (data format unchanged from v1.0)
 - **Canonical release:** https://github.com/Relative-Arch/protocol/releases/tag/v1.1
-- **License:** CC BY-NC-SA 4.0
+- **License:** Dual license:
+  - Machine-readable specs: MIT — see `LICENSE-MIT`
+  - Book text and narrative: CC BY-NC-SA 4.0 — see `LICENSE-BOOK`
 
 ---
 
@@ -73,13 +79,23 @@ Before diagnosing or designing interventions, read [`spec/context-v1.1.md`](./sp
 
 └── spec/
 
+    ├── constraints.md # Mandatory invariants for AI agents
+    
     ├── context-v1.1.md # Theoretical rationale
     
     ├── rules-v1.1.yaml # Formalized rules
     
     ├── glossary-v1.1.json # Structured glossary
     
-    └── golden-dataset.json # Test dataset for agent verification
+    ├── golden-dataset.json # Test dataset for agent verification
+    
+    └── prompts/
+    
+        ├── snapshot.md # Diagnostic system prompt
+        
+        ├── trajectory.md # Trajectory analysis prompt
+        
+        └── intervention.md # Intervention design prompt
     
 
 ---
